@@ -1,0 +1,48 @@
+{% extends "page_layout.html" %}
+
+{% block results %}
+
+<div id="projects">
+{% if info %}
+  {% for heading in info['headings'] %}
+    {% if heading['title'] == 'experience' %}
+      <h1 class="page_heading">&lt;{{heading['title']}}&gt;</h1>
+      <p class="page_subheading"><strong>{</strong>{{heading['subheading']}}<strong>}</strong></p>
+
+      <p class="about_text">It's been a privilege to contribute to and learn more about the field through several internships over the beginning of my career. From code completion to deployment, my experience has prepared me for development in a production environment.</p>
+      
+      <div class="grid">
+        {% for workplace in workplaces.job_list %}
+          <div class="projects-feature">
+            <!-- Sidebar | Image -->
+            <div class="col-1-3">
+              <a href="{{workplace.urls.link}}"><img class="projects-feature-img" src="{{workplace.urls.img}}"></a>
+            </div>
+            <!-- Main Feature | Text -->
+            <div class="col-2-3 projects-info">
+              <div class="project-title">
+                <p class="proj-title" id="{{workplace.title}}"><strong><b>{{workplace.title}}</b></strong>
+                {% if workplace.urls.link %}
+                  <a target="_blank" href="{{workplace.urls.link}}"><i class="fa fa-external-link"></i></a>
+                {% endif %}
+                </p>
+              </div>
+              <p>{{workplace.description}}</p> 
+              <p class="about_text">{{workplace.text | safe}}</p>
+              <div class="languages">
+              {% for lang in workplace.languages %}
+                <span class="projects-lang">{{ lang }}</span>
+              {% endfor %}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <h1 class="page_heading">&lt;/{{heading['title']}}&gt;</h1>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <p> error in loading page </p>
+{% endif %}
+</div>
+{% endblock %}

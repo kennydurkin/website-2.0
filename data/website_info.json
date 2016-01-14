@@ -1,0 +1,25 @@
+{
+  "headings": [
+  {
+   "title": "home",
+   "subheading": ""
+  },
+  {
+   "title": "about",
+   "subheading": "Hi, I'm Kenny."
+  },
+  {
+   "title": "projects",
+   "subheading": "I enjoy creating things."
+  },
+  {
+   "title": "experience",
+   "subheading": "I love what I do."
+  },
+  {
+   "title": "extras",
+   "subheading": "I have lots of interests!"
+   }
+  ],
+  "job_status": false
+}

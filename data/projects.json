@@ -1,0 +1,42 @@
+{
+  "project_list": [{
+      "title": "website",
+      "description": "My legacy site! The previous iteration of my personal website was the product of my web development course during my time at Grooveshark. It implements a MySQL database and PHP in order to see how data plays into creating web apps. It was also my first foray into HTML/CSS/Javascript, and was a great learning experience.",
+      "languages": ["HTML/CSS", "JavaScript", "Apache", "MySQL", "PHP"],
+      "urls": {
+        "github": "https://github.com/kennydurkin/website",
+        "link" : "http://legacy.kennydurk.in",
+        "img": "static/images/projects/site.png"
+        }
+      },
+      {
+        "title": "hardware",
+        "description": "For Fordham's Computer Science Society, I created a web interface for our hardware checkout library. Users are able to select an item and, upon providing their information, are placed in a queue to receive an item. The hardware inventory site is an ongoing project and currently runs on Python Flask.",
+        "languages": ["HTML/CSS", "JavaScript", "Python", "Flask"],
+        "urls": {
+          "github": null,
+          "link" : "http://hardware.fordhamcss.me",
+          "img": "static/images/projects/hardware.png"
+        }
+      },
+      {
+        "title": "stockswipe",
+        "description": "Stockswipe is an interactive data visualization built at Unhackathon 2014 with some friends. Pulling financial data from Yahoo APIs, we leveraged the LeapMotion gesture control device to provide an immersive user experience. Think JARVIS from Iron Man. We won second place in the Best Design category!",
+        "languages": ["HTML/CSS", "JavaScript", "Node.js", "Yahoo! Finance API"],
+        "urls": {
+          "github": "https://github.com/kennydurkin/stockswipe",
+          "link" : "http://162.243.87.66/stockswipe",
+          "img": "static/images/projects/stockswipe.png"
+        }
+      },
+      {
+        "title": "giphetsy",
+        "description": "Giphetsy was a fun hackathon project developed at hackNY (Spring 2015) that combines random GIFs with relevant Etsy crafts. The app was built to learn Node.js and explore how to handle data from APIs such as Giphy and Etsy. The final product wasn't perfect, but was a ton of fun to create and present!",
+        "languages": ["HTML/CSS", "JavaScript", "Node.js", "Giphy API", "Etsy API"],
+        "urls": {
+          "github": "https://github.com/kennydurkin/giphetsy",
+          "link" : "http://162.243.87.66/giphetsy",
+          "img": "static/images/projects/giphetsy.gif"
+        }
+      }]
+}

@@ -1,0 +1,31 @@
+{% extends "page_layout.html" %}
+
+{% block results %}
+
+<div id="about">
+{% if info %}
+  {% for heading in info['headings'] %}
+    {% if heading['title'] == 'about' %}
+      <h1 class="page_heading">&lt;{{heading['title']}}&gt;</h1>
+      <p class="page_subheading"><b>{</b>{{heading['subheading']}}<b>}</b></p>
+
+      <img class="about_img" src="/static/images/profile.jpg"/>
+      <p class="about_text">Nice to meet you! I'm a New York based software engineer specializing in web development. I'm currently finishing my final semester of study at Fordham University, where I'll graduate with a degree in Computer Science in May 2016.</p>
+      <p class="about_text">As an up-and-coming developer, I found a passion for writing software that makes a <b>real</b>, <b>quantifiable</b>, and <b>disruptive</b> impact. &nbsp;My goal is to live a career of writing and shipping elegant code that will enhance the lives of others through technology. Currently, I'm hoping to attain that goal by joining a company with a similar mission to which I can meaningfully contribute and in which I'll be personally invested.</p>
+      <p class="about_text">I enjoy and have worked on both ends of the stack, but am not opposed to concentrating on one specifically. I consider myself proficient in the frontend essentials of HTML, CSS, &amp; Javascript and have experience with various backend server-side languages and database technologies. Through personal <a class="para_link" href="/projects">projects</a>, several <a class="para_link" href="/experience">internships</a> and extracurricular <a class="para_link" href="/extras">activities</a>, I've been able to mature as a developer, as a team player, and as a human. Feel free to check some of them out, and if you'd ever like to chat or get to know me better, don't hesitate to <a class="para_link" href="mailto:kdurkin6@fordham.edu?subject=Hey Kenny, What's Up?">drop me a line</a>!</p>
+      {% if info['job_status'] == False %}
+        <p class="about_text"><b>I am actively engaged in seeking and interviewing for full time roles.</b> If you are a recruiter or otherwise interested in hiring, please feel free to <a class="para_link" target="_blank" href="/static/files/Kenny Durkin Resume.pdf">read my resume</a> or <a class="para_link" href="mailto:kdurkin6@fordham.edu?subject=Full Time Job Opportunity">shoot me an email</a>. So long as this message appears, I'm still open to opportunities. :)</p>
+      {% endif %}
+
+      <p class="about_text">Thanks for stopping by, and hope you enjoy the site!</p>
+
+      <br>
+      <h1 class="page_heading">&lt;/{{heading['title']}}&gt;</h1>
+    {% endif %}
+  {% endfor %}
+{% else %}
+  <p> error in loading page </p>
+{% endif %}
+</div>
+
+{% endblock %}

@@ -1,0 +1,40 @@
+{% include "base.html" %}
+<div class = "nav">
+    {% if info %}
+      <ul id="nav">
+          {% for heading in info['headings'] %}
+            {% if heading['title'] == info['current'] %}
+              <li class="nav-item active"><a class="nav-link" href="/{{heading['title']}}">
+            {{heading['title']}}</a>
+              </li>
+            {% else %}
+          <li class="nav-item"><a href="/{{heading['title']}}">
+            {{heading['title']}}</a>
+          </li>
+            {% endif %}
+          {% endfor %}
+      </ul>
+    {% else %}
+      <p> error loading nav </p>
+    {% endif %}
+</div>
+<div class="main">
+{% if info['current'] == 'home' %}
+  <div class="page_content">
+    {% block results_home %}{% endblock %}
+  </div>
+  {% else %}
+  <div class="page_content">
+    {% block results %}{% endblock %}
+  </div>
+{% endif %}
+</div>
+
+<footer>
+  <div class="footer-content">    
+    <figure><a target='blank' href="http://www.linkedin.com/in/kennydurkin"><i class="fa fa-2x fa-linkedin-square"></i></a><figcaption id="logo1">LinkedIn</figcaption></figure>
+    <figure><a target='blank' href="/static/files/Kenny Durkin Resume.pdf" ><i class="fa fa-2x fa-file-text"></i></a><figcaption id="logo2">Resume</figcaption></figure>
+    <figure><a target='blank' href="http://www.github.com/kennydurkin"><i class="fa fa-2x fa-github-alt"></i></a><figcaption id="logo3">Github</figcaption></figure>
+    <br>
+  </div>
+</footer>

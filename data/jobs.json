@@ -1,0 +1,33 @@
+{
+  "job_list": [{
+      "title": "delivery.com",
+      "description": "September-December 2015 | New York, NY",
+      "text": "Last semester, I interned on the responsive team at dcom, and primarily worked within the AngularJS framework. I completed tasks in a sprint-based agile environment, utilizing tools such as JIRA and Github, working with designers, product managers, and senior devs to see tickets through to completion.",
+      "languages": ["HTML", "CSS", "Javascript", "AngularJS"],
+      "urls": {
+        "link" : "https://delivery.com",
+        "img": "static/images/jobs/deliverydotcom.png"
+      }
+    },
+    {
+      "title": "jawbone",
+      "description": "June-August 2015 | San Francisco, CA",
+      "text": "Last summer, I worked on the web team at Jawbone, where I gained most of my full stack experience. I primarily became proficient using Python, JavaScript, and MySQL. My project was to develop <a class=\"para_link\" href=\"https://jawbone.com/up/developer/tools\">UP Sims</a> - a feature enabling developers to generate test users of varying metrics in order to assist the development of 3rd party apps.",
+      "languages": ["HTML", "CSS", "Javascript", "Python", "MySQL"],
+      "urls": {
+        "link" : "https://jawbone.com",
+        "img": "static/images/jobs/jawbone.png"
+      }
+    },
+    {
+    "title": "grooveshark",
+    "description": "June-August 2014 | Gainesville, FL",
+    "text": "After my sophomore year, I had the privilege of working on the Android team at Grooveshark. I implemented the Chromecast functionality of their mobile app along with other features. I also participated in a month long course covering front-end basics, server side programming, and version control in order to learn web development.",
+    "languages": ["Java", "Android", "Git"],
+    "urls": {
+      "link" : "https://en.wikipedia.org/wiki/Grooveshark",
+      "img": "static/images/jobs/grooveshark.png"
+      }
+    }
+  ]
+}
