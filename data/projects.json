@@ -25,7 +25,7 @@
         "languages": ["HTML/CSS", "JavaScript", "Node.js", "Yahoo! Finance API"],
         "urls": {
           "github": "https://github.com/kennydurkin/stockswipe",
-          "link" : "http://162.243.87.66/stockswipe",
+          "link" : "http://kennydurk.in/stockswipe",
           "img": "static/images/projects/stockswipe.png"
         }
       },
@@ -35,7 +35,7 @@
         "languages": ["HTML/CSS", "JavaScript", "Node.js", "Giphy API", "Etsy API"],
         "urls": {
           "github": "https://github.com/kennydurkin/giphetsy",
-          "link" : "http://162.243.87.66/giphetsy",
+          "link" : "http://kennydurk.in/giphetsy",
           "img": "static/images/projects/giphetsy.gif"
         }
       }]
