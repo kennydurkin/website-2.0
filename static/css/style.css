@@ -139,7 +139,7 @@ a.para_link:hover{
  ***************/
 body.home {
   background-image: url('/static/images/yosemite.jpg');
-  background-position: 0 50%;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -306,10 +306,6 @@ p.projects-info{
   -moz-transition: all 0.2s ease-in-out 0s;
 }
 
-.organization_list:hover{
-    color: #288feb;
-}
-
 .organization_detail{
     display: none;
     font-size: 1em;
@@ -326,6 +322,7 @@ p.projects-info{
     border-left: solid;
     border-color: #28cb75;
     border-width: medium;
+    cursor: pointer;
 }
 
 .organization_text {
