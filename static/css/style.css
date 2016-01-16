@@ -597,6 +597,10 @@ figcaption.animated {
     padding-top: 0.5em;
   }
 
+  body.home #heading {
+    padding: 0 0 15% 0;
+  }
+
   figcaption, figcaption.animated {
     font-size: 24px;
   }
@@ -609,13 +613,13 @@ figcaption.animated {
     line-height: 1.33;
   }
 }
-/* iPhone 4 & 5 screen width */
-@media screen and (max-width: 430px)  {
+/* Small phone screen widths */
+@media screen and (max-width: 480px)  {
   li {
-    font-size: 1.2em;
+    font-size: 1.25em;
   }
 
   body.home #heading {
-    font-size: 104px;
+    font-size: 112px;
   }
 }
