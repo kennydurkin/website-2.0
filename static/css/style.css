@@ -188,9 +188,17 @@ body.home #subheading {
   font-style: italic;
   text-align: center;
   padding-bottom: 20px;
-  opacity: 0;
   color: white;
   text-shadow: 1px 1px 1px #3a3f41;
+}
+
+.sh-fade-in {
+  opacity: 1;
+  transition:         opacity 1.25s;
+  -moz-transition:    opacity 1.25s;
+  -ms-transition:     opacity 1.25s;
+  -o-transition:      opacity 1.25s;
+  -webkit-transition: opacity 1.25s;
 }
 
 body.home figure {
@@ -310,6 +318,19 @@ p.projects-info{
     display: none;
     font-size: 1em;
     line-height: 1.3em;
+}
+
+.fadeable {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transition:         opacity 300ms;
+    -moz-transition:    opacity 300ms;
+    -ms-transition:     opacity 300ms;
+    -o-transition:      opacity 300ms;
+    -webkit-transition: opacity 300ms;
 }
 
 .organization_group{

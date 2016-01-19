@@ -1,19 +1,24 @@
 var path = document.location.pathname,
     getEl = function(el) {return document.getElementById(el);},
     getClass = function(cl) {return document.getElementsByClassName(cl);},
-    fadeIn = function(el, speed) {
-      el.style.opacity = 0;
-      el.style.transition = 'opacity ' + speed + 'ms ease-in-out';
+    fadeIn = function(el) {
       setTimeout(function(){
-        el.style.opacity = 1;
-      },0.1);
+        el.classList.remove('fadeable');
+        el.classList.add('sh-fade-in');
+      },500);
+    },
+    detailFadeIn = function(el) {
+      el.classList.remove('fadeable');
+      el.classList.remove('fade-in');
+      el.classList.add('fadeable');
+      window.setTimeout( function() {
+          el.classList.add('fade-in');
+      }, 10);
     };
 
 if(path === '/' || path === '/home'){
   window.onload = function(){
-    setTimeout(function() { 
-      fadeIn(getEl('subheading'), 1250);
-    }, 500);  
+    fadeIn(getEl('subheading'));
 
     var logos = [getEl('logo1'),getEl('logo2'),getEl('logo3')];
     
@@ -64,7 +69,7 @@ else if(path === '/extras'){
           var important_class = class_detail[1];
           var detail_section = getClass(important_class + ' organization_detail')[0];
           
-          detail_section.offsetParent === null ? (detail_section.style.display = 'block', fadeIn(detail_section,300)) : (detail_section.style.display = 'none');
+          detail_section.offsetParent === null ? (detail_section.style.display = 'block', detailFadeIn(detail_section)) : (detail_section.style.display = 'none');
         },
         hideDetailSection = function(){
           event.stopPropagation();
