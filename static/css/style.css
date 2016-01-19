@@ -169,7 +169,7 @@ body.home #heading {
   text-align: center;
   letter-spacing: 2.5px;
   color: white;
-  text-shadow: #3a3f41 0.5px 0.5px 0.5px;
+  text-shadow: 0.5px 0.5px 0.5px #3a3f41;
   padding: 0 0 8% 0;
 
   animation-duration: 1s;
@@ -190,7 +190,7 @@ body.home #subheading {
   padding-bottom: 20px;
   opacity: 0;
   color: white;
-  text-shadow: #3a3f41 0.5px 0.5px 0.5px;
+  text-shadow: 0.5px 0.5px 0.5px #3a3f41;
 }
 
 body.home figure {
