@@ -3,24 +3,16 @@ var path = document.location.pathname,
     getClass = function(cl) {return document.getElementsByClassName(cl);},
     fadeIn = function(el, speed) {
       el.style.opacity = 0;
-
-      var last = +new Date();
-      var tick = function() {
-        el.style.opacity = +el.style.opacity + (new Date() - last) / speed;
-        last = +new Date();
-
-        if (+el.style.opacity < 1) {
-          (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
-        }
-      };
-
-      tick();
+      el.style.transition = 'opacity ' + speed + 'ms ease-in-out';
+      setTimeout(function(){
+        el.style.opacity = 1;
+      },0.1);
     };
 
 if(path === '/' || path === '/home'){
   window.onload = function(){
     setTimeout(function() { 
-      fadeIn(getEl('subheading'), 1000);
+      fadeIn(getEl('subheading'), 1250);
     }, 500);  
 
     var logos = [getEl('logo1'),getEl('logo2'),getEl('logo3')];
@@ -72,7 +64,7 @@ else if(path === '/extras'){
           var important_class = class_detail[1];
           var detail_section = getClass(important_class + ' organization_detail')[0];
           
-          detail_section.offsetParent === null ? (fadeIn(detail_section,300), detail_section.style.display = 'block') : (detail_section.style.display = 'none');
+          detail_section.offsetParent === null ? (detail_section.style.display = 'block', fadeIn(detail_section,300)) : (detail_section.style.display = 'none');
         },
         hideDetailSection = function(){
           event.stopPropagation();
