@@ -278,6 +278,10 @@ p.projects-info{
   font-size: 2em;
 }
 
+.proj-title > p {
+  font-family: 'Lato', sans-serif;
+}
+
 .projects-lang{
   text-transform: uppercase;
   background: #28cb75;
