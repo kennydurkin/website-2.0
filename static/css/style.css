@@ -3,7 +3,7 @@
  ****************/
 
 html, h1, h2, h3, h4, h5, h6, p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: #3a3f41;
   margin: 0 auto;
 }
@@ -35,11 +35,13 @@ body {
 
 .page_heading{
   text-align: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .page_subheading {
   text-align: center;
   font-size: 18px;
+  font-family: 'Lato', sans-serif;
 }
 
 /*************
@@ -104,6 +106,7 @@ a.para_link:hover{
     position: relative;
     text-decoration: none;
     color: snow;
+    font-family: 'Lato', sans-serif;
 }
 
 .nav-item.active > a {
@@ -348,8 +351,9 @@ footer {
   padding: 0 0.5em 0 0.5em;
 }
 
+/* Total hack, pls replace soon */
 .footer-content {
-  margin-left: calc(50vw - 91px);
+  margin-left: calc(50vw - 103px);
 }
 
 figure {
@@ -544,7 +548,7 @@ figcaption.animated {
   }
 
   li {
-    font-size: 1.4em;
+    font-size: 1.25em;
   }
 
   .intro{
@@ -615,10 +619,6 @@ figcaption.animated {
 }
 /* Small phone screen widths */
 @media screen and (max-width: 480px)  {
-  li {
-    font-size: 1.25em;
-  }
-
   body.home #heading {
     font-size: 112px;
   }
