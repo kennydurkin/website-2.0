@@ -1,7 +1,7 @@
 {
   "project_list": [{
-      "title": "website",
-      "description": "My legacy site! The previous iteration of my personal website was the product of my web development course during my time at Grooveshark. It implements a MySQL database and PHP in order to see how data plays into creating web apps. It was also my first foray into HTML/CSS/Javascript, and was a great learning experience.",
+      "title": "legacy site",
+      "description": "My old website! The previous iteration of my personal website was the product of my web development course during my time at Grooveshark. It implements a MySQL database and PHP in order to see how data plays into creating web apps. It was also my first foray into HTML/CSS/Javascript, and was a great learning experience.",
       "languages": ["HTML/CSS", "JavaScript", "Apache", "MySQL", "PHP"],
       "urls": {
         "github": "https://github.com/kennydurkin/website",
@@ -10,7 +10,17 @@
         }
       },
       {
-        "title": "hardware",
+      "title": "new website",
+      "description": "My most recent work gave my portfolio site a much needed facelift. Built in Python Flask and vanilla JavaScript/CSS, I streamlined the old design while honing in on my frontend skills without the use of external libraries. I've grown a lot as a developer in the past couple of years!",
+      "languages": ["HTML/CSS", "JavaScript", "Python", "Flask"],
+      "urls": {
+        "github": "https://github.com/kennydurkin/website-2.0",
+        "link": "http://kennydurk.in",
+        "img": "static/images/projects/new-site.png"
+        }
+      },
+      {
+        "title": "hardware lab",
         "description": "For Fordham's Computer Science Society, I created a web interface for our hardware checkout library. Users are able to select an item and, upon providing their information, are placed in a queue to receive an item. The hardware inventory site is an ongoing project and currently runs on Python Flask.",
         "languages": ["HTML/CSS", "JavaScript", "Python", "Flask"],
         "urls": {
@@ -22,7 +32,7 @@
       {
         "title": "stockswipe",
         "description": "Stockswipe is an interactive data visualization built at <a class=\"para_link\" href=\"http://unhackathon2014.devpost.com/\">Unhackathon</a> with some friends. Pulling financial data from Yahoo APIs, we leveraged the LeapMotion gesture control device to provide an immersive user experience. Think JARVIS from Iron Man. We won 2nd place in the Best Design category!",
-        "languages": ["HTML/CSS", "JavaScript", "Node.js", "Yahoo! Finance API"],
+        "languages": ["HTML/CSS", "JavaScript", "Node.js", "Yahoo! API"],
         "urls": {
           "github": "https://github.com/kennydurkin/stockswipe",
           "link" : "http://kennydurk.in/stockswipe",
@@ -32,7 +42,7 @@
       {
         "title": "giphetsy",
         "description": "Giphetsy was a fun hackathon project developed at <a class=\"para_link\" href=\"http://hackny-s2015.devpost.com/\">hackNY</a> that combines random GIFs with relevant Etsy crafts. The app was built to learn Node.js and explore how to handle data from APIs such as Giphy and Etsy. The final product wasn't perfect, but was a ton of fun to create and present!",
-        "languages": ["HTML/CSS", "JavaScript", "Node.js", "Giphy API", "Etsy API"],
+        "languages": ["HTML/CSS", "JavaScript", "Node.js", "Giphy/Etsy API"],
         "urls": {
           "github": "https://github.com/kennydurkin/giphetsy",
           "link" : "http://kennydurk.in/giphetsy",
