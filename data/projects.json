@@ -14,7 +14,7 @@
         "description": "For Fordham's Computer Science Society, I created a web interface for our hardware checkout library. Users are able to select an item and, upon providing their information, are placed in a queue to receive an item. The hardware inventory site is an ongoing project and currently runs on Python Flask.",
         "languages": ["HTML/CSS", "JavaScript", "Python", "Flask"],
         "urls": {
-          "github": null,
+          "github": "https://github.com/fordham-css/hardware",
           "link" : "http://hardware.fordhamcss.me",
           "img": "static/images/projects/hardware.png"
         }
