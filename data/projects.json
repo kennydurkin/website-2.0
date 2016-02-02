@@ -21,7 +21,7 @@
       },
       {
         "title": "stockswipe",
-        "description": "Stockswipe is an interactive data visualization built at Unhackathon 2014 with some friends. Pulling financial data from Yahoo APIs, we leveraged the LeapMotion gesture control device to provide an immersive user experience. Think JARVIS from Iron Man. We won second place in the Best Design category!",
+        "description": "Stockswipe is an interactive data visualization built at <a class=\"para_link\" href=\"http://unhackathon2014.devpost.com/\">Unhackathon</a> 2014 with some friends. Pulling financial data from Yahoo APIs, we leveraged the LeapMotion gesture control device to provide an immersive user experience. Think JARVIS from Iron Man. We won second place in the Best Design category!",
         "languages": ["HTML/CSS", "JavaScript", "Node.js", "Yahoo! Finance API"],
         "urls": {
           "github": "https://github.com/kennydurkin/stockswipe",
@@ -31,7 +31,7 @@
       },
       {
         "title": "giphetsy",
-        "description": "Giphetsy was a fun hackathon project developed at hackNY (Spring 2015) that combines random GIFs with relevant Etsy crafts. The app was built to learn Node.js and explore how to handle data from APIs such as Giphy and Etsy. The final product wasn't perfect, but was a ton of fun to create and present!",
+        "description": "Giphetsy was a fun hackathon project developed at <a class=\"para_link\" href=\"http://hackny-s2015.devpost.com/\">hackNY</a> that combines random GIFs with relevant Etsy crafts. The app was built to learn Node.js and explore how to handle data from APIs such as Giphy and Etsy. The final product wasn't perfect, but was a ton of fun to create and present!",
         "languages": ["HTML/CSS", "JavaScript", "Node.js", "Giphy API", "Etsy API"],
         "urls": {
           "github": "https://github.com/kennydurkin/giphetsy",
