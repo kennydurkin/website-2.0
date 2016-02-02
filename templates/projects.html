@@ -31,7 +31,7 @@
                 {% endif %}
                 </p>
               </div>
-              <p class="about_text">{{project.description}}</p>
+              <p class="about_text">{{project.description | safe}}</p>
               <div class="languages">
               {% for lang in project.languages %}
                 {% if loop.index0 % 3 == 0 and not loop.first %}
